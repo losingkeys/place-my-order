@@ -1,16 +1,19 @@
-import Component from 'can-component';
-import DefineMap from 'can-define/map/';
-import './list.less';
-import view from './list.stache';
+import Component from "can-component";
+import DefineMap from "can-define/map/";
+import "./list.less";
+import view from "./list.stache";
+import Restaurant from "~/models/restaurant";
 
 export const ViewModel = DefineMap.extend({
-  message: {
-    default: 'This is the pmo-restaurant-list component'
+  restaurants: {
+    value() {
+      return Restaurant.getList({});
+    }
   }
 });
 
 export default Component.extend({
-  tag: 'pmo-restaurant-list',
+  tag: "pmo-restaurant-list",
   ViewModel,
   view
 });
