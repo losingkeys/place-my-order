@@ -5,7 +5,7 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donejs-user/place-my-order.git"
+    "url": "git+https://github.com/losingkeys/place-my-order.git"
   },
   "author": {
     "name": "Josh Hoff",
@@ -66,6 +66,7 @@
     "done-component": "^2.0.0",
     "done-css": "^3.0.2",
     "done-serve": "^2.0.0",
+    "donejs-travis": "^1.0.0",
     "generator-donejs": "^2.1.0",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.7",
